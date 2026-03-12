@@ -110,3 +110,12 @@ while programStatus:    #Starting the program
         programStatus=False
     else:
         print("Invalid option, try again")  #If the user enters an invalid option, the program will print an error message and ask for the input again
+
+"""Mira, ten en cuenta que cuando realizas un nueva compra, a persar de terminar la anterior, 
+el programa no borra los datos de la compra anterior, por lo que al momento de registrar una nueva compra, 
+el programa sigue sumando los datos de la compra anterior, por lo que el total de la nueva compra 
+es el total de la compra anterior más el total de la nueva compra, lo mismo pasa con las ventas del día, 
+por lo que al momento de registrar una nueva venta, el programa sigue sumando los datos de la venta anterior, 
+por lo que el total de las ventas del día es el total de las ventas del día anterior más el total de las 
+ventas del día actual. Para solucionar esto, puedes agregar una función para limpiar los datos de la compra anterior 
+y las ventas del día anterior al momento de registrar una nueva compra o una nueva venta."""
