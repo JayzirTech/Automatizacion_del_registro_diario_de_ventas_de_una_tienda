@@ -5,6 +5,7 @@ programStatus = True
 sistemStatus = True
 saleStatus = True
 addProducts = True
+sales=[]
 
 print()
 print("Daily Sales Record")
