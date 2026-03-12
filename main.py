@@ -2,9 +2,9 @@
 
 #Variables
 programStatus = True
+sistemStatus = True
 saleStatus = True
 addProducts = True
-sistemStatus = True
 
 print()
 print("Daily Sales Record")
@@ -25,7 +25,8 @@ while programStatus:    #Starting the program
                 saleStatus=False
             else:
                 print("Invalid option, try again")  #If the user enters an invalid option, the program will print an error message and ask for the input again
-                while addProducts:
+
+                while addProducts:  #If the user enters an invalid option, the program will enter this loop until the user enters a valid option
                     addProduct=input("Want add more product? (Yes) or (No): ").lower()
                     if addProduct == "yes":
                         saleStatus=True
@@ -36,6 +37,8 @@ while programStatus:    #Starting the program
                     else:
                         print("")
                         print("Invalid option, try again")
+
+            addProducts=True
 
         print("")
         newSale=input("Want to register a new sale? (Yes) or (No): ").lower()   #Ask if the user wants to register a new sale
@@ -59,6 +62,7 @@ while programStatus:    #Starting the program
 
     if option == "1":   #If the user selects option 1, the program will start the sale process again
         sistemStatus=True
+        saleStatus=True
     elif option == "2": #If the user selects option 2, the program will print the sales records (this part is not implemented yet)
         print("Sales records are not available yet.")
     elif option == "3": #If the user selects option 3, the program will print a goodbye message and end the program
