@@ -71,6 +71,7 @@ while programStatus:   #Loop to ask the user if they want to start the program
             else:
                 print("--------------------------------")
                 print("Invalid option, try again")  #If the user enters an invalid option, it will ask again
+        addNewSales=True
 
     print("Main menu")
     print("1. Add a new sale")
@@ -79,7 +80,6 @@ while programStatus:   #Loop to ask the user if they want to start the program
     Option=input("Enter the option number: ")   #Ask the user to choose an option
 
     if Option == "1":
-        addNewSale=True
         saleStatus=True
         addProducts=True
         sistemStatus=True
